@@ -1,0 +1,163 @@
+.Footer {
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    width: 100%;
+    left: 0;
+    bottom: 0;
+}
+
+.Footer .Subscribe {
+    display: flex;
+    justify-content: center;
+    margin: 10px auto -5px;
+    width: 100%;
+}
+
+.Footer .Subscribe a {
+    cursor: pointer;
+    color: var(--color-secondary);
+    transition: 0.3s;
+}
+
+.Footer .Subscribe a:hover {
+    color: var(--text-primary);
+}
+
+.Footer .Subscribe p {
+    color: var(--color-secondary);
+}
+
+.Footer .Footer-Main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: -10px 0 0 0;
+    width: 100%;
+}
+
+.Footer .Footer-Main .Logo {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 33%;
+    filter: var(--color-invert);
+}
+
+.Footer .Footer-Main .Logo img {
+    height: 100px;
+}
+
+.Footer .Footer-Main .SiteMap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+}
+
+.Footer .Footer-Main .SiteMap a {
+    margin: 20px 5px;
+    text-decoration: none;
+    color: var(--color-secondary);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.Footer .Footer-Main .SiteMap a:hover {
+    color: var(--text-primary);
+}
+
+.Footer .Footer-Main .SiteMap span {
+    margin: 20px 5px;
+}
+
+.Footer .Footer-Main .SocialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    padding-right: 20px;
+    width: 33%;
+}
+
+.Footer .Footer-Main .SocialMedia a {
+    margin: 20px 5px;
+}
+
+.Footer .Footer-Main .SocialMedia i {
+    font-size: 25px;
+    color: var(--color-secondary);
+    transition: 0.3s;
+}
+
+.Footer .Footer-Main .SocialMedia i:hover {
+    color: var(--text-primary);
+}
+
+.Footer .Footer-Main .SocialMedia span {
+    margin: 0 5px;
+    transform: translateY(-3px);
+    font-size: 18px;
+    color: var(--text-primary);
+}
+
+.Footer .Copyright {
+    display: flex;
+    padding-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.Footer .Copyright i {
+    margin-right: 5px;
+    font-size: 18px;
+    color: var(--color-secondary);
+}
+
+.Footer .Copyright a {
+    font-size: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+    color: var(--color-secondary);
+}
+
+.Footer .Copyright a:hover, 
+.Footer .Copyright i:hover {
+    color: var(--text-primary);
+}
+
+@media screen and (max-width: 700px) {
+    .Footer .Footer-Main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .Footer .Footer-Main .Logo {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin: 0 0 -10px 0;
+    }
+
+    .Footer .Footer-Main .SiteMap {
+        width: 100%;
+        margin: -10px 0 0 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Footer .Footer-Main .SocialMedia {
+        width: 100%;
+        margin: -20px 0 0 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Footer .Copyright {
+        width: 100%;
+        margin-top: -10px;
+    }
+}
